@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto de Matrícula</title>
+    <meta name="description" content="Formulario de matriculación del IES El Caminàs.">
+    <meta property="og:title" content="Contacto - IES El Caminàs">
+    <meta property="og:description" content="Formulario de contacto y matrícula.">
+    <meta property="og:image" content="FotosYVideos/FotoIesELCaminasLenguaje.webp">
+    <meta property="og:url" content="https://www.ieselcaminas.es/contacto.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <link rel="icon" href="FotosYVideos/FotoCaminas.png" type="image/png">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        
+            <h1>Formulario de Matriculación</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="estudios.html">Oferta de estudios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        
+    </header>
+    <main>
+        <form action="https://servidor-ficticio.com" method="post">
+            <fieldset>
+                <legend>Datos del Estudiante</legend>
+                <label for="nombre">Nombre Completo (ej: Lucas Palermo Andreu)</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Correo Electrónico (ej: correoDeEjemplo@correo.com)</label>
+                <input type="email" id="email" name="email" required>
+                <label for="fecha">Fecha de Nacimiento (ej: 11/06/2007)</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </fieldset>
+            <fieldset>
+                <legend>Información Académica</legend>
+                <label for="curso">Selecciona tu curso</label>
+                <select id="curso" name="curso" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="web">Desarrollo Web</option>
+                    <option value="ia">Desarrollo de IA</option>
+                    <option value="videojuegos">Desarrollo de Videojuegos</option>
+                </select>
+                <label for="mensaje">Porque mereces entrar?</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+            </fieldset>
+            <div>
+                <input type="checkbox" id="privacidad" name="privacidad" required>
+                <label for="privacidad">Acepto la política de privacidad</label>
+            </div>
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+    </main>
+    <footer>
+        <p>© 2026 Generalitat, Conselleria de Educación</p>
+    </footer>
+</body>
+
+</html>

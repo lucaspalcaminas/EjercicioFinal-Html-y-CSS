@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Oferta Educativa</title>
+
+    <meta name="description" content="Consulta el horario y los departamentos del IES El Caminàs.">
+
+    <meta property="og:title" content="Oferta Educativa - IES El Caminàs">
+    <meta property="og:description" content="Horario del curso DAM y departamentos del centro.">
+    <meta property="og:image" content="FotosYVideos/FotoIesELCaminasLenguaje.webp">
+    <meta property="og:url" content="https://www.ieselcaminas.es/estudios.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+
+    <link rel="icon" href="FotosYVideos/favicon.png" type="image/png">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        
+        <h1>Oferta Educativa</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="estudios.html">Oferta de estudios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section>
+            <h2>Horario DAM</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>08:00 - 08:55</td>
+                        <td rowspan="2">Programación Web</td>
+                        <td>Sistemas</td>
+                        <td>Bases de Datos</td>
+                        <td>Sistemas</td>
+                        <td>Diseño</td>
+                    </tr>
+                    <tr>
+                        <td>08:55 - 09:50</td>
+                        <td>Sistemas</td>
+                        <td>Bases de Datos</td>
+                        <td>Inglés</td>
+                        <td>Diseño</td>
+                    </tr>
+                    <tr>
+                        <td>09:50 - 10:45</td>
+                        <td>Lenguaje de Marcas</td>
+                        <td>Lenguaje de Marcas</td>
+                        <td>Lenguaje de Marcas</td>
+                        <td>Empresa</td>
+                        <td>Hora Libre</td>
+                    </tr>
+                    <tr>
+                        <td>10:45 - 11:00</td>
+                        <td colspan="5">RECREO</td>
+                    </tr>
+                    <tr>
+                        <td>11:00 - 12:00</td>
+                        <td>Empresa</td>
+                        <td>Entornos</td>
+                        <td>Programación</td>
+                        <td>Bases de Datos</td>
+                        <td>Tutoría</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 - 13:00</td>
+                        <td>Inglés</td>
+                        <td>Empresa</td>
+                        <td>Entornos</td>
+                        <td>Programación</td>
+                        <td>Bases de Datos</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="6">Aun puede cambiar el horario</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section>
+            <h2>Departamentos</h2>
+            <details>
+                <summary>Departamento de Informática</summary>
+                <ul>
+                    <li>Prof. Carlos Prada</li>
+                    <li>Prof. Fabio Zamudio</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Departamento de Comercio</summary>
+                <ul>
+                    <li>Prof. Salvation Castellote</li>
+                    <li>Prof. Emma Myers</li>
+                </ul>
+            </details>
+        </section>
+        <section>
+            <canvas id="miCanvas" width="500" height="200"></canvas>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 IES El Caminàs</p>
+    </footer>
+    <script>
+        const canvas = document.getElementById('miCanvas');
+        const ctx = canvas.getContext('2d');
+        const gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
+        gradient.addColorStop(0, "blue");
+        gradient.addColorStop(1, "green");
+        ctx.fillStyle = gradient;
+        ctx.fillRect(10, 10, 480, 180);
+        ctx.fillStyle = "white";
+        ctx.font = "20px Arial";
+        ctx.fillText("IES El Caminàs", 150, 110);
+    </script>
+</body>
+</html>
